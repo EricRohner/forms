@@ -6,12 +6,19 @@
 
 
     <style>
+        html {
+            display: flex;
+            justify-content: center;
+        }
         body {
+            border: solid black 12px;
+            width: 500px;
+            background-color: white;
+        }
+        header {
             background-color: aquamarine;
         }
-        header{
-            background-color: black;
-        }
+
         h1, h2 {
             text-align: center;
         }
@@ -21,7 +28,7 @@
             text-decoration: none;
         }
 
-        [name="namePassStart"]{
+        [name="login"]{
             display:flex;
             flex-direction: column;
         }
@@ -43,20 +50,23 @@
         <a href="/"> Home </a>
     </nav>
 </header>
-<h2>Super sick competitive browser based wii bowling clone with no motion controls:</h2>
+<h2>Super Sick competitive browser based wii bowling clone with no motion controls:</h2>
 <h1>2018!</h1>
 
 <section>
-    <p1>Login</p1>
-<form name="namePassStart">
+<form name="login">
     <div name="namePass">
     <div name="group">
     <label for="characterName">Character Name</label>
-    <input type="text" id="characterName" name="characterName" required minlength="2" required maxlength="20">
+    <input type="text" id="characterName" name="characterName"
+           required minlength="2" required maxlength="20"
+           placeholder="Ogg the barbarian">
     </div>
     <div name="group">
     <label for="password">Password</label>
-    <input type="password" id="password" name="password" required minlength="8" required maxlength="20">
+    <input type="password" id="password" name="password"
+           required minlength="8" required maxlength="20"
+           placeholder="********">
     </div>
     </div>
     <button type="submit" class="button-primary">Start!</button>
@@ -67,7 +77,8 @@
     <p1>Forgot your password?</p1>
     <form>
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required minlength="6" required maxlength="30">
+        <input type="email" id="email" name="email" required minlength="6"
+               required maxlength="30" placeholder="mail@mail.mail">
 
         <button type="submit" class="button-primary">Submit</button>
     </form>
